@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+  </head>
+  <body class="position-relative">
+    <div class="container  ">
+      <h1 class="text-center">Bookmarker</h1>
+      <div class="border-design">
+        <div>
+          <div
+            class="d-flex justify-content-center align-items-center text-center"
+          >
+            <i class="fa-solid fa-bookmark before-icon"></i>
+            <h2 class="p-2">Bookmark your favorite sites</h2>
+            <i class="fa-solid fa-bookmark after-icon"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-book-bookmark"></i>
+            <label for="bookmarkName" class="form-label mx-2">
+              Site Name
+            </label>
+            <input
+              oninput="validationName()"
+              type="email  "
+              id="bookmarkName"
+              class="form-control"
+              placeholder="Bookmark Name"
+            />
+          </div>
+        </div>
+        <div>
+          <i class="fa-solid fa-book-bookmark"></i>
+          <label for="websiteUrl" class="form-label my-4 mx-2">
+            Site URL
+          </label>
+          <input
+            oninput="validationUrl()"
+            type="text"
+            id="websiteUrl"
+            class="form-control"
+            placeholder="Website URL"
+          />
+        </div>
+        <div class="d-flex justify-content-center align-items-center m-5">
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            onclick="addWebsite()"
+            id="submitBtn"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="my-4">
+          <input
+            oninput="searchUrl()"
+            type="search"
+            id="searchUrl"
+            class="form-control"
+            placeholder="Search your URL ..."
+          />
+        </div>
+      </div>
+      <div class="text-center">
+        <table class="table my-4 ">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="displayData"></tbody>
+        </table>
+      </div>
+      
+    </div>
+    <div class=" layer d-none " id="validationLayer">
+      <div class="layer-body">
+          <div class=" d-flex justify-content-between">
+            <div>
+              <i class="fa-solid fa-circle text-danger"></i>
+              <i class="fa-solid fa-circle text-warning"></i>
+              <i class="fa-solid fa-circle text-primary"></i>
+              </div>
+              <div  id="closeBtn"><a href=""><i class="fa-solid fa-xmark fs-3 text-secondary"></i></a></div>
+          </div>
+            <h4 class="text-black fs-5 py-3">
+              Site Name or Url is not valid, Please follow the rules below :
+            </h4>
+            <p class="text-black">
+              <i class="fa-solid fa-circle-arrow-right text-danger px-3"></i
+              >Site name must contain at least 3 characters
+            </p>
+            <p class="text-black">
+              <i class="fa-solid fa-circle-arrow-right text-danger px-3"></i
+              >Site name must contain at least 3 characters
+            </p>
+      </div>
+      
+
+    </div>
+    
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
