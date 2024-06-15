@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BookMark</title>
+    <link rel="shourtcut icon " href="images/bookmark.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
   </head>
   <body class="position-relative">
-    <div class="container  ">
+    <div class="container">
       <h1 class="text-center">Bookmarker</h1>
       <div class="border-design">
         <div>
@@ -75,7 +76,7 @@
         </div>
       </div>
       <div class="text-center">
-        <table class="table my-4 ">
+        <table class="table my-4">
           <thead>
             <tr>
               <th>Index</th>
@@ -87,35 +88,32 @@
           <tbody id="displayData"></tbody>
         </table>
       </div>
-      
     </div>
-    <div class=" layer d-none " id="validationLayer">
+    <div class="layer d-none" id="validationLayer">
       <div class="layer-body">
-          <div class=" d-flex justify-content-between">
-            <div>
-              <i class="fa-solid fa-circle text-danger"></i>
-              <i class="fa-solid fa-circle text-warning"></i>
-              <i class="fa-solid fa-circle text-primary"></i>
-              </div>
-              <div  id="closeBtn"><a href=""><i class="fa-solid fa-xmark fs-3 text-secondary"></i></a></div>
+        <div class="d-flex justify-content-between">
+          <div>
+            <i class="fa-solid fa-circle text-danger"></i>
+            <i class="fa-solid fa-circle text-warning"></i>
+            <i class="fa-solid fa-circle text-primary"></i>
           </div>
-            <h4 class="text-black fs-5 py-3">
-              Site Name or Url is not valid, Please follow the rules below :
-            </h4>
-            <p class="text-black">
-              <i class="fa-solid fa-circle-arrow-right text-danger px-3"></i
-              >Site name must contain at least 3 characters
-            </p>
-            <p class="text-black">
-              <i class="fa-solid fa-circle-arrow-right text-danger px-3"></i
-              >Site name must contain at least 3 characters
-            </p>
+          <div id="closeBtn">
+            <a href=""><i class="fa-solid fa-xmark fs-3 text-secondary"></i></a>
+          </div>
+        </div>
+        <h4 class="text-black fs-5 py-3">
+          Site Name or Url is not valid, Please follow the rules below :
+        </h4>
+        <p class="text-black">
+          <i class="fa-solid fa-circle-arrow-right text-danger px-3"></i>Site
+          name must contain at least 3 characters
+        </p>
+        <p class="text-black">
+          <i class="fa-solid fa-circle-arrow-right text-danger px-3"></i>Site
+          URL must be a valid one
+        </p>
       </div>
-      
-
     </div>
-    
-    
 
     <script src="js/bootstrap.bundle.min.js"></script>
 
