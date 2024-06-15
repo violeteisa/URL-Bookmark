@@ -20,7 +20,7 @@ function addWebsite() {
 
         var website = {
             name: bookmarkNameInput.value,
-            Url: websiteUrl,
+            Url: websiteUrlInput.value,
         };
         websiteList.push(website);
         displayData();
